@@ -18,18 +18,8 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
- * Provides a global override and fallback for the promise implementation used
- * by crystalize. Meant to be used by the application to change the default
- * promise implementation to, for example, bluebird:
- *
- *     require("crystalize-promise").Promise = require("bluebird");
- *
- * Now all crystalize modules using promises will use bluebird. Each correct
- * module should also let you override the promise implementation at the module
- * and instance level. It is strongly recommended for all crystalize modules to
- * use the same implementation!
  */
+
 module.exports = {
     Promise: global.Promise,
 };
