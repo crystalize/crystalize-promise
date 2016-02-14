@@ -1,6 +1,6 @@
 # crystalize-promise
 
-## Provides a global override and fallback for the promise implementation used
+## Global default Promise implementation for crystalize modules
    by crystalize.
 
 All crystalize modules that reference promises use this module. This module
